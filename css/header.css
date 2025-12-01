@@ -1,0 +1,12 @@
+header {
+  width: 100%; /*100% IRÁ OCUPAR POR PADRÃO, TODA A LARGURA DE QUALQUER DISPOSITIVO*/
+  height: 138px; /*138px É BASICAMENTE A ALTURA PADRÃO DO HEADER*/
+  background-color: var(--background-tertiary-color);
+}
+
+.logo-bussula__mobile {
+  display: inline-block;
+  width: 68px;
+  height: 64px;
+  margin: 37px 0 0 48px;
+}
