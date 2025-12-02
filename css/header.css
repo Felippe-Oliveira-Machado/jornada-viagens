@@ -42,3 +42,47 @@ nav {
   text-decoration: none;
   list-style: none;
 }
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    /* Garante que o contêiner do menu se alinhe corretamente no header */
+    margin-top: 0;
+  }
+
+  .navigation-menu label,
+  input[type="checkbox"] {
+    /* Oculta o ícone do hambúrguer e o checkbox */
+    display: none;
+  }
+
+  nav {
+    /* Redefine a nav para sair da posição absoluta do mobile */
+    display: block; /* Garante que o menu esteja sempre visível */
+    position: static; /* Volta para o fluxo normal do documento */
+    /* Outras propriedades (top, left, width, background-color) podem ser removidas se herdarem corretamente ou redefinidas conforme necessário */
+  }
+
+  .list-links {
+    /* Estilos para a lista de links horizontal */
+    display: flex;
+    align-items: center; /* Alinha os itens da lista verticalmente */
+    list-style: none; /* Remove marcadores da lista se houver */
+    /* Remova position: relative pois não é necessário aqui e pode causar problemas */
+  }
+
+  .list-links li {
+    /* Adiciona margem horizontal e remove a margem vertical do mobile */
+    margin: 0 10px; /* Por exemplo, 15px de margem lateral entre os links */
+  }
+
+  .list-links li:last-child {
+    margin-right: 0; /* Opcional: remove a margem do último item */
+  }
+
+  /* Opcional: Garante que os links dentro da lista usem display: block/inline-block para respeitar o padding/margin */
+  .list-links li a {
+    display: block;
+    padding: 5px 0; /* Um pequeno padding vertical se desejar */
+    margin-right: 5em;
+  }
+}
