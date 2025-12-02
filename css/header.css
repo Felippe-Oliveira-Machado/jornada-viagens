@@ -14,8 +14,14 @@ header {
   height: 64px;
 }
 
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+
 nav {
   display: none;
+  margin-bottom: 100%;
+  background-color: var(--background-primary-color);
 }
 
 .menu__hamburguer {
