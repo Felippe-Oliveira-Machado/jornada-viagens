@@ -6,6 +6,7 @@ header {
   align-items: flex-start;
   padding: 29px 48px;
   align-items: center;
+  position: relative;
 }
 
 .logo-bussula__mobile {
@@ -16,15 +17,28 @@ header {
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
   display: none;
-  margin-bottom: 100%;
-  background-color: var(--background-primary-color);
+  position: absolute;
 }
 
 .menu__hamburguer {
   display: flex;
   margin-right: 0.7em;
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-secundary-color);
+  text-decoration: none;
+  list-style: none;
 }
